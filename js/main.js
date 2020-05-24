@@ -1,9 +1,3 @@
-/*
-* Template Name: PRO Card - Material Resume / CV / vCard Template
-* Author: lmpixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 1.0
-*/
 
 (function($) {
 "use strict";
@@ -199,7 +193,6 @@
             removalDelay: 300,
 
             // Class that is added to popup wrapper and background
-            // make it unique to apply your CSS animations just to this exact popup
             mainClass: 'mfp-fade',
             image: {
                 // options for image content type
@@ -272,7 +265,7 @@
         //Google Maps
         $("#map").googleMap();
         $("#map").addMarker({
-            address: "15 avenue des champs Elysées 75008 Paris" // Your Address
+            address: ""
         });
     });
 
