@@ -17,6 +17,17 @@
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 
+  <!-- Email Init Script -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="js/email.js"></script>
+  <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("user_KTzXAowp4zAUdJjDYeBaR");
+    })();
+  </script>
+
+
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -107,7 +118,7 @@
 
 			<div class="row">
 				<div class="col-md-3">
-					<img src="images/profile.jpg" alt="about" />
+					<img src="images/profile.jpg" alt="My Picture" />
 				</div>
 				<div class="col-md-9">
 					<h2 class="mt-4 mt-md-0 mb-4">Hi 👋</h2>
@@ -577,7 +588,7 @@
 
 				<div class="col-md-8">
 					<!-- Contact Form -->
-					<form id="contact-form" class="contact-form" method="post" action="form/contact.php">
+					<form id="contact-form" class="contact-form" method="post">
 
 						<div class="messages"></div>
 
@@ -615,7 +626,7 @@
 							</div>
 						</div>
 
-						<button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default"><i class="icon-paper-plane"></i>Send Message</button><!-- Send Button -->
+						<button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default" onclick='sendMail()'><i class="icon-paper-plane"></i>Send Message</button><!-- Send Button -->
 
 					</form>
 					<!-- Contact Form end -->
